@@ -108,7 +108,7 @@ Create sas v5 transport files with long variable names in the label field
     /*   2         20         Jamed                                                                                           */
     /*   3         30         Mary                                                                                            */
     /*                                                                                                                        */
-    */ /*************************************************************************************************************************
+    /**************************************************************************************************************************/
 
     /*         _       _   _
      ___  ___ | |_   _| |_(_) ___  _ __
@@ -183,6 +183,10 @@ Create sas v5 transport files with long variable names in the label field
 
     /*---- SEQUENCE_BY_10_UNITS = 'SEQUENCE'   ----*/
     /*---- STUDENTS_IN_MATH_CLASS = 'STUDENTS' ----*/
+    
+    %arraydelete(_var);
+    %arraydelete(_lbl);
+
 
     /*              _
       ___ _ __   __| |
